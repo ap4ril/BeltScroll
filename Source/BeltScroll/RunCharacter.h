@@ -18,15 +18,6 @@ private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"));
 	class UCameraComponent* Camera;
 
-public:
-	UFUNCTION(BlueprintImplementableEvent, Category = "Lane")
-		void ChangeLane1();
-
-	UFUNCTION(BlueprintCallable, Category = "Lane")
-		void ChangeLaneUpdate1(float Value);
-
-	UFUNCTION(BlueprintCallable, Category = "Lane")
-		void ChangeLaneFinished1();
 
 
 

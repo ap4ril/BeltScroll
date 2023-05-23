@@ -7,17 +7,6 @@
 
 
 
-void ARunCharacter::ChangeLane1()
-{
-}
-
-void ARunCharacter::ChangeLaneUpdate1(float Value)
-{
-}
-
-void ARunCharacter::ChangeLaneFinished1()
-{
-}
 
 // Sets default values
 ARunCharacter::ARunCharacter()
@@ -26,8 +15,8 @@ ARunCharacter::ARunCharacter()
 	PrimaryActorTick.bCanEverTick = true;
 
 	CameraArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CamerArm"));
-	CameraArm->TargetArmLength = 350.f;
-	CameraArm->SocketOffset = FVector(0.f, 0.f, 100.f);
+	CameraArm->TargetArmLength = 700.f;
+	CameraArm->SocketOffset = FVector(1100.f, 700.f, 350.f);
 	CameraArm->bUsePawnControlRotation = true;
 	CameraArm->SetupAttachment(GetRootComponent());
 
